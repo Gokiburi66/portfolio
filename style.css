@@ -1,0 +1,603 @@
+@charset "UTF-8";
+
+/* 基本設定*/
+body{
+    /* ------- フォントの種類の設定 ---------*/
+font-family: sans-serif, YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック';
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none; 
+}
+.screenreadertext{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px,1px,1px,1px);
+}
+.text{
+    margin-left: 10%;
+}
+.header{
+    background-color: darkgray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 32px;
+}
+.logo{
+    width: 65px;
+}
+
+.glovalnav-list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.glovalnav-list li{
+    margin-left: 72px;
+}
+
+.glovalnav-list a{
+    color: #222222;
+}
+
+.maincopy{
+    /*子要素の指定*/
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-30%);
+}
+
+.maincopymain{
+    margin-top: 50px;
+}
+
+.maincopysub{
+    width: 157px;
+}
+/*めっせーじ*/
+.topmessege{
+    background: rgba(245, 189, 67, 0.658);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 108px 0;
+    margin-bottom: 1.25rem;
+}
+.face{
+    width: 175px;
+    margin-right: 190px;
+}
+.topmessegetext{
+    width: 42.7%;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-family:monospace;
+    font-weight:300;
+}
+.topmessegetext h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 1000;
+    font-family:'Times New Roman', Times, serif;
+    right: 50px;
+}
+.maincopymain{
+    width: 420px;
+}
+.about{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: white;
+    font-size: 8rem;
+    margin-left: 20%;
+}
+
+
+.aboutabout{
+    background-color: rgba(185, 131, 243, 0.527);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.aboutabout figure{
+    width: 543px;
+}
+
+.aboutabout figure .fun{
+    position: absolute;
+    max-width: 157px;
+    top: 50%;
+    left: 90%;
+}
+
+.aboutabout p{
+    padding: 20px;
+    width: 500px;
+    font-size: 25px;
+    line-height: 1.77;
+    padding-right: 20px;
+}
+
+.aboutabout:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.aboutabout:nth-child(odd) .fun{
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+
+/*背景のための設定:疑似要素を使う*/
+.abtoper::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 75.937vw;
+    right: 0;
+    top: 50%;
+    height: 525px;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.ppp{
+    background-color: slategrey;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: gold;
+    font-size: 8rem;
+    margin-left: 20%;
+}
+
+.policyyyy{
+    font-size: 15px;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 115px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-content: space-around;
+	align-content: space-around;
+}
+.ouou{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.workwork{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: white;
+    font-size: 8rem;
+    margin-left: 20%;
+}
+
+.ooo{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+.ourour{
+    background-color: #fce5c49f;
+    padding: 20px;
+    margin-bottom: 75px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.ouou li{
+    width: calc(33.3% - 16px);
+}
+
+.worimg{
+    padding: 40px;
+}
+
+.buabuabua{
+    border: none;
+    background: transparent;
+    appearance: none;
+    color: black;
+    background: #ffddaa;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    padding: 30px 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: 390px;
+}
+
+.buabuabua:hover{
+    color: blue;
+    background-color: transparent;
+    border: 2px solid violet;
+}
+
+.sp{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: white;
+    font-size: 8rem;
+    margin-left: 20%;
+}
+
+.cia ul{
+    padding: 10px;
+    display: flex;
+    background-color: #222222;
+    margin: auto;
+}
+.cia li{
+    width: 200px;
+    padding: 20px;
+}
+
+.maimai{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    background-color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color:white;
+    font-size: 8rem;
+    margin-left: 20%;
+}
+
+input,textarea{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.fifififif .onamae{
+    background: red;
+    padding: 3px;
+    color: gold;
+}
+
+.fifififif{
+    text-align: center;
+    padding: 15px;
+}
+.mailBack{
+    background-color: aquamarine;
+    height: 420px;
+}
+
+.fifififif button{
+    text-align: center;
+    border: none;
+    appearance: none;
+    color: black;
+    background: #ffddaa;
+    width: 500px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.fifififif button:hover{
+    color: blue;
+    background-color: transparent;
+    border: 2px solid violet;
+}
+.saigoni {
+    position: relative;
+    left: 80%;
+    bottom: 30%;
+}
+.saigoni li{
+    margin-bottom: 10px;
+}
+
+.backgrounddd{
+    background-color: darkgray;
+    height: 200px;
+    justify-content: space-between;
+
+}
+
+.kaete{
+    position: relative;
+    padding: 2rem;
+    top: 10px;
+}
+
+
+.gloavalsnslist{
+    display: none;
+}
+
+.buttonh{
+    position: relative;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    z-index: 200;
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+    border: 0;
+    outline: 0;
+    background-color: darkgray;
+    cursor: pointer;
+    appearance: none;
+}
+
+modaal-video .modaal-inner-wrapper{
+	padding:0;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin: auto;
+    padding: 40px;
+}
+
+
+
+
+
+
+/*
+レスポンシブ(tab)
+--------------------------------*/
+@media screen and (max-width:900px){
+    /*ここにコードを記載*/
+
+    header{
+        overflow: hidden;
+    }
+
+    .glovalnav{
+        position: fixed;
+        top: 0; 
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background: aqua;
+        z-index: 11;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateX(151%);
+        transition: transform .3s ease-in-out;
+    }
+
+    .is-open .glovalnav{
+        transform: translateX(0);
+        flex-direction: column;
+    }
+
+    section{
+        padding: 60px.5px;
+        
+    }
+
+    .topmessege{
+        display: block;
+        padding: 50px;
+    }
+
+    .face{
+        position: relative;
+        left: 37%;
+        margin-bottom: 65px;
+    }
+    .topmessegetext{
+        width: 100%;
+        text-align: center;
+    }
+    .topmessegetext h2{
+        right: 0;
+    }
+
+    .aboutabout{
+        flex-direction: column-reverse;
+        display: block;
+        padding-left: 80px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutabout p{
+        padding-top: 40px;
+        text-align: center;
+        margin-right: auto;
+        max-width: 100%;
+        
+    }
+
+
+    .abtoper::after{
+        background-color: white;
+    }
+    .topabout figure{
+        max-width: 100%;
+        text-align: center;
+
+    }
+
+    .gloavalsnslist{
+        display: flex;
+    }
+
+    .my-orange{
+        color: orange;
+    }
+
+    .hunb{
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        /*bottom: 0;*/
+        display: block;
+        width: 32px;
+        height: 2px;
+        margin: auto 0;
+        border-radius: 4px;
+        background-color: black;
+    }
+    
+    .hunb::before{
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border-radius: 4px;
+        background-color: black;
+    }
+    
+    .hunb::after{
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: 0;
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border-radius: 4px;
+        background-color: black;
+    }
+    .is-open .hunb{
+        background-color: aqua;
+    }
+    .is-open .buttonh{
+        position: fixed;
+        background-color: aqua;
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+
+    .is-open .hunb::before,.is-open .hunb::after{
+        top: 0;
+        
+    }
+    
+    .is-open .hunb::before{
+        transform: rotate(45deg);
+        
+    }
+
+    
+    .glovalnav-list{
+        flex-direction: column;
+        
+    }
+
+    .is-open .glovalnav-list li{
+        transform: translateX(-40px);
+        margin-bottom: 20px;
+    }
+    
+    .is-open .hunb::after{
+        transform: rotate(-45deg);
+    }
+
+    .buabuabua{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .fifififif button{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .waroa{
+        margin: 0px;
+    }
+
+    .about{
+        font-size: 4rem;
+    }
+    .workwork{
+        font-size: 4rem;
+    }
+    .ooo{
+        font-size: 1.25rem;
+    }
+    .ouou{
+        width: 100%;
+    }
+    .maimai{
+        font-size: 4rem;
+    }
+    .sp{
+        font-size: 4rem;
+    }
+    .worimg{
+        padding: 10px;
+    }
+}
+
+/*
+レスポンシブ(sp)
+--------------------------------*/
+
+@media screen and (max-width:600px){
+    /*ここにコードを記載*/
+}
+
+
+
+
+
+
+
+
