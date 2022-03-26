@@ -102,6 +102,17 @@ ul{
     margin-left: 20%;
 }
 
+.video-open{
+	-webkit-transform: scale(1);
+  	transform: scale(1);
+  	-webkit-transition: .3s ease-in-out;
+ 	 transition: .3s ease-in-out;
+}
+.video-open{
+	-webkit-transform: scale(1.3);
+ 	 transform: scale(1.3);
+}
+	
 
 .aboutabout{
     background-color: rgba(185, 131, 243, 0.527);
