@@ -102,13 +102,13 @@ ul{
     margin-left: 20%;
 }
 
-.video-open{
+.video-open img{
 	-webkit-transform: scale(1);
   	transform: scale(1);
   	-webkit-transition: .3s ease-in-out;
  	 transition: .3s ease-in-out;
 }
-.video-open{
+.video-open:hover img{
 	-webkit-transform: scale(1.3);
  	 transform: scale(1.3);
 }
